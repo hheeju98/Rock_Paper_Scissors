@@ -10,10 +10,27 @@
     <button>Reset</button>
     <div>You</div>
     <div>Computer</div>
-    <img src="/img/paper.png" id="paperImage" />
-    <img src="/img/rock.png" id="rockImage" />
-    <img src="/img/scissors.png" id="scissorsImage" />
-    <div id="myPlay"></div>
+    <img
+      src="/img/paper.png"
+      id="paperImage"
+      class="playImage"
+      data-image="/img/paper.png"
+    />
+    <img
+      src="/img/rock.png"
+      id="rockImage"
+      class="playImage"
+      data-image="/img/rock.png"
+    />
+    <img
+      src="/img/scissors.png"
+      id="scissorsImage"
+      class="playImage"
+      data-image="/img/scissors.png"
+    />
+    <div id="image-container">
+      <img id="displayed-image" src="" />
+    </div>
     <script src="/index.js"></script>
   </body>
 </html>
