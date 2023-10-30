@@ -28,3 +28,23 @@ const imageContainer = document.getElementById("image-container");
 imageContainer.addEventListener("click", function () {
   this.style.display = "none";
 });
+
+const imgArray = new Array();
+imgArray[0] = "/img/paper.png";
+imgArray[1] = "/img/rock.png";
+imgArray[2] = "/img/scissors.png";
+
+function showImage() {
+  var imgNum = Math.round(Math.random() * 2);
+  var objImg = document.getElementById("introimg");
+  objImg.src = imgArray[imgNum];
+  setTimeout(showImage, 500);
+}
+
+// const imageSources = ["/img/paper.png", "/img/rock.png", "/img/scissors.png"];
+// let imageElement = document.getElementById("imageElement");
+// function changeImage() {
+//   currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+//   imageElement.src = imageSources[currentImageIndex];
+// }
+// setInterval(changeImage, 1000);
